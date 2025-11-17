@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Categoria do Usuário</title>
+</head>
+<body>
+
+<!-- MENU SUPERIOR -->
+<div class="menu">
+    <img src="linkDaFoto" alt="perfil">
+    <a href="inicial.html">Voltar</a>
+   
+</div>
+
+<div class="container">
+
+    <div class="categoria">
+        <h2 class="titulo">Estudante</h2>
+
+        <div class="icon-doc"></div>
+
+        <p class="label">Foto do documento</p>
+
+        <input type="text" placeholder="Matrícula">
+        <input type="text" placeholder="Instituição">
+
+        <button class="btn-verificar">Verificar</button>
+        <button class="btn-voltar">Voltar</button>
+    </div>
+
+    <div class="linha"></div>
+
+    <div class="categoria">
+        <h2 class="titulo">Idoso (+65)</h2>
+
+        <div class="icon-doc"></div>
+
+        <p class="label">Foto do documento</p>
+
+        <input type="text" placeholder="Cpf">
+        <input type="text" placeholder="Comprovante INSS">
+
+        <button class="btn-verificar">Verificar</button>
+        <button class="btn-voltar">Voltar</button>
+    </div>
+
+</div>
+<div class="centro">
+    <a href="inicial.html">
+        <button class="btn-pular">Pular Seleção de categoria</button>
+    </a>
+</div>
+
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+  /* MENU SUPERIOR */
+  .menu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+        background: #fff;
+        font-size: 18px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .menu img {
+        width: 35px;
+        border-radius: 50%;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #000;
+    }
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.categoria {
+    width: 250px;
+}
+
+.titulo {
+    color: #0051a3;
+    font-size: 20px;
+}
+
+.icon-doc {
+    width: 60px;
+    height: 70px;
+    margin: 10px auto;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/337/337946.png');
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.label {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.btn-verificar {
+    width: 90%;
+    background: #004aad;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-voltar {
+    margin-top: 5px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.btn-pular {
+    background: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.linha {
+    width: 2px;
+    height: 320px;
+    background: #004aad;
+}
+
+.centro {
+    margin-top: 25px;
+}
+
+</style>

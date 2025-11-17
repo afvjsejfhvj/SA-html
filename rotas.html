@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Rotas</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* MENU SUPERIOR */
+ /* MENU SUPERIOR */
+ .menu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+        background: #fff;
+        font-size: 18px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .menu img {
+        width: 35px;
+        border-radius: 50%;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    /* ÁREA DE BUSCA */
+    .buscas {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-image: linear-gradient(to right, #004add, #001773);
+        padding: 20px;
+        width: 97.1%;
+    }
+
+    .busca-box {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .busca-box-separar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .busca-box-principal {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .input {
+        padding: 10px 15px;
+        width: 260px;
+        border-radius: 10px;
+        border: 1px solid #d0d0d0;
+        outline: none;
+    }
+    .input:hover{
+        transform: scale(1.01);    
+    }
+    .lupa{
+        height: 63px;
+        width: 63px;
+        margin-top: 12px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        align-items: center;
+        font-size: 40px;
+        border-radius: 300px;
+        padding-bottom: 8px;
+        padding-right: 14px;
+    }
+    .lupa:hover{
+        transform: rotate(14deg) scale(1.03);
+    }
+
+    .input-principal {
+        padding: 10px 15px;
+        width: 560px;
+        border-radius: 20px;
+        border: 1px solid #d0d0d0;
+        outline: none;
+    }
+    .input-principal:hover{
+        transform: scale(1.01);    
+    }
+
+
+
+    /* CAIXAS DE HORÁRIOS */
+    .conteudo {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    .caixa {
+        background: #fff;
+        padding: 25px;
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .caixa h3 {
+        margin-top: 0;
+    }
+
+    .linha {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 0;
+    }
+</style>
+</head>
+<body>
+
+<!-- MENU SUPERIOR -->
+<div class="menu">
+    <img src="linkDaFoto" alt="perfil">
+    <a href="inicial.html">Voltar</a>
+   
+</div>
+
+<!-- BARRAS DE BUSCA -->
+<div class="buscas">
+    <div class="busca-box">
+        <div class="busca-box-separar">
+        <input class="input" type="text" placeholder="Meu ponto de partida">
+        <input class="input" type="text" placeholder="Meu ponto de chegada">
+        </div>
+    </div>
+    <div class="busca-box-principal">
+        <input class="input-principal" type="text" placeholder="Pesquisar por linha">
+        <button class="lupa">🔍</button>
+   
+    </div>
+</div>
+
+<!-- CAIXAS DE HORÁRIOS -->
+<div class="conteudo">
+    <div class="caixa">
+        <h3>Horários de Saída<br>marco I</h3>
+
+        <div class="linha"><span>• nome cidade</span><span>07:20</span></div>
+        <div class="linha"><span>• nome cidade</span><span>07:20</span></div>
+        <div class="linha"><span>• nome cidade</span><span>07:20</span></div>
+        <div class="linha"><span>• nome cidade</span><span>07:20</span></div>
+        <div class="linha"><span>• nome cidade</span><span>07:20</span></div>
+    </div>
+
+    <div class="caixa">
+        <h3>Horários de Saída<br>marco II</h3>
+
+        <div class="linha"><span>• nome cidade</span><span>07:20</span></div>
+        <div class="linha"><span>• nome cidade</span><span>07:20</span></div>
+        <div class="linha"><span>• nome cidade</span><span>07:20</span></div>
+        <div class="linha"><span>• nome cidade</span><span>07:20</span></div>
+        <div class="linha"><span>• nome cidade</span><span>07:20</span></div>
+    </div>
+</div>
+
+</body>
+</html>

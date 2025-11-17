@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nome do Site</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        text-align: center;
+    }
+
+    /* haader */
+
+    header {
+        margin-top: 30px;
+        /* background-color: rgb(251, 255, 0);*/
+        background-attachment: fixed;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    /* botoes alinhados */
+    .botoes {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 280px);
+        justify-content: center;
+        gap: 25px;
+    }
+
+    /* da a cor azul */
+    .botoes a {
+        background: #004aad;
+        color: white;
+        padding: 40px;
+        border-radius: 15px;
+        text-decoration: none;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+    }
+
+    .botoes a:hover {
+        background: #00347a;
+        transform: scale(1.05);
+    }
+
+    /* --- MOBILE --- */
+    @media (max-width: 450px) {
+        .botoes {
+            grid-template-columns: 1fr;
+        }
+    }
+    /*texte nao serve para nada*/
+    .teste {
+        transition-duration: 200ms;
+    }
+
+    .teste:hover {
+
+        transform: scale(1.2);
+    }
+    .marca {
+        font-size: 60px;
+        justify-content: center;
+        margin-top: -70px;
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1 class="marca">
+        <!-- Facial debit -->
+        <p class="teste">F</p>
+        <p class="teste">a</p>
+        <p class="teste">c</p>
+        <p class="teste">i</p>
+        <p class="teste">a</p>
+        <p class="teste">l</p>
+        <p style="color: transparent;">_</p>
+        <p class="teste">D</p>
+        <p class="teste">e</p>
+        <p class="teste">b</p>
+        <p class="teste">i</p>
+        <p class="teste">t</p>
+    </h1>
+</header>
+
+<div class="botoes">
+    <a href="pagamento.html">Pagamento</a>
+    <a href="rotas.html">Rotas</a>
+    <a href="categoria.html">Categoria</a>
+    <a href="extrato.html">Extrato  </a>
+</div>
+
+</body>
+</html>
